@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sketchpad</h1>
+        <div class="click">Mode: Color On</div>
+        <div class="sketch">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="black" onclick="colorChange('black')">Black</button>
+                <button class="erase" onclick="colorChange('white')">Erase</button>
+                <button class="gray" onclick="colorChange('gray')">Gray</button>
+                <button class="random" onclick="colorChange('random')">Random</button>
+                <button class="reset" onclick="boardReset()">Reset</button>
+            </div>
+        </div>
+        <input type="text" placeholder="Size" value="16" onchange="sizer(this.value)">
+        <button>Set Size</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
